@@ -51,6 +51,8 @@ google_site_verification: # fill in to your verification string
 
 google_analytics:
   id: # fill in your Google Analytics ID
+baidu_analytics:
+  uid: 2c9d9de19456147bef966552c029ae7d
 
 # Prefer color scheme setting.
 #
