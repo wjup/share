@@ -90,6 +90,18 @@
   {% endif %}
 
   <!-- JavaScript -->
+  <!-- 百度统计 -->
+  {% if site.baidu_analytics.uid != empty and site.baidu_analytics.uid %}
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?{{site.baidu_analytics.uid}}";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  {% endif %}
 
   {% unless site.theme_mode %}
     {% include mode-toggle.html %}
